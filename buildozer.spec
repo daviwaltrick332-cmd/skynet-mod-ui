@@ -31,6 +31,9 @@ fullscreen = 0
 # API 33 é o Android 13, a mais estável para compilação via GitHub Actions
 android.api = 33
 
+# Aceita as licenças do SDK no ambiente não interativo do GitHub Actions
+android.accept_sdk_license = True
+
 # (int) Minimum Android API
 android.minapi = 21
 
