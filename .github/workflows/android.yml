@@ -54,9 +54,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: .buildozer
-          key: android-${{ runner.os }}-${{ hashFiles('buildozer.spec') }}
+          key: android-v2-${{ runner.os }}-${{ hashFiles('buildozer.spec') }}
           restore-keys: |
-            android-${{ runner.os }}-
+            android-v2-${{ runner.os }}-
 
       - name: Build debug APK
         run: buildozer android debug
